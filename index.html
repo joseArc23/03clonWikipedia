@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clon Wikipedia</title>
+</head>
+<body>
+  <header class="header">
+    <span class="header__logo">Wikipedia</span>
+    <strong class="header__title">La enciclopedia libre</strong>
+  </header>
+  <main>
+    <section class="section">
+      <!-- idiomas y la esfera -->
+      <article class="section__esfera">
+        <!-- español e ingles fila 1 -->
+        <div class="section__languages section__language--short">
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">Español</h2>
+            <p class="section__language-text">1 630 000+ articulos</p>
+          </div>
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">English</h2>
+            <p class="section__language-text">6 168 000+ articles</p>
+          </div>
+        </div>
+        <!-- japones y aleman fila 2 -->
+        <div class="section__languages section__language--medium">
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">日本語</h2>
+            <p class="section__language-text">1 231 000+ 記事</p>
+          </div>
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">Deutsch</h2>
+            <p class="section__language-text">2 486 000+ Artkel</p>
+          </div>
+        </div>
+        <!-- ruso y frances fila 3 -->
+        <div class="section__languages section__language--large">
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">Русский</h2>
+            <p class="section__language-text">1 630 000+ статей</p>
+          </div>
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">Français</h2>
+            <p class="section__language-text">6 168 000+ articles</p>
+          </div>
+        </div>
+        <!-- italiano y chino fila 4 -->
+        <div class="section__languages section__language--medium">
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">Italiano</h2>
+            <p class="section__language-text">1 630 000+ voci</p>
+          </div>
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">中文</h2>
+            <p class="section__language-text">6 168 000+ 條目</p>
+          </div>
+        </div>
+        <!-- portugues y arabe fila 5 -->
+        <div class="section__languages section__language--short">
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">Português</h2>
+            <p class="section__language-text">1 630 000+ artigos</p>
+          </div>
+          <div class="section__language">
+            <h2 class="section__language-text section__language-text--title">العربية</h2>
+            <p class="section__language-text">6 168 000+ مقالة</p>
+          </div>
+        </div>
+      </article>
+      <!-- buscador -->
+      <div class="section__input">
+        <input type="text">
+        <!-- boton selecion idiomas -->
+        <div>
+          <label for="language">ES</label>
+          <select name="idiomas" id="language">
+            <option value="espanhol">Español</option>
+            <option value="english">English</option>
+            <option value="german">Deutsch</option>
+          </select>
+        </div>
+        <button>lupita</button>
+      </div>
+      <!-- leer en tu idioma -->
+      <div class="section__choose-language">
+        <button>
+          <!-- logo de idiomas -->
+          <span>Leer en tu idioma</span>
+          <!-- flechita -->
+        </button>
+      </div>
+    </section>
+
+    <!-- información -->
+    <section class="section">
+      <!-- informacion extra de la página -->
+      <article class="section-info">
+        <div class="section-info__text">
+          <img src="" alt=""> <!-- puede ser bacground image  -->
+          <p>Wikipedia es alojada por la Fundación Wikimedia, una organización sin fines de lucro que también alberga una gama de otros proyectos.</p>
+        </div>
+        <div class="section-info__text">
+          <img src="" alt="">
+          <h2 class="section-info__text--bold">Descargar Wikipedia para Android o iOS</h2>
+          <p>Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia.</p>
+          <!-- botones de descarga iOS Android -->
+          <div class="section-info__logos">
+            <a href="#">
+              <img src="" alt="descarga android">
+            </a>
+            <a href="#">
+              <img src="" alt="descarga iOS">
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- información fuentes extra -->
+      <article class="section-links-container">
+        <!-- container-item -->
+        <div class="section-link-container__item">
+          <!-- titulos azules -->
+          <span class="section-link-container__icon"></span>
+          <h3 class="section-link-container__text section-link-container__title">Commons</h3>
+          <p class="section-link-container__text">Fotos libremente utilizables y más</p>
+        </div>
+        <!-- container-item -->
+        <div class="section-link-container__item">
+          <!-- titulos azules -->
+          <span class="section-link-container__icon"></span>
+          <h3 class="section-link-container__text section-link-container__title">Wikiviajes</h3>
+          <p class="section-link-container__text">La guía de viajes libre</p>
+        </div>
+        <!-- container-item -->
+        <div class="section-link-container__item">
+          <!-- titulos azules -->
+          <span class="section-link-container__icon"></span>
+          <h3 class="section-link-container__text section-link-container__title">Wikcionario</h3>
+          <p class="section-link-container__text">El diccionario libre</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- pie de página -->
+  <footer class="footer">
+    <p class="footer__text">Esta página está disponible bajo la <a href="#">licencia Creative Commons Atribución-Compartir Igual</a></p>
+    <span class="footer__dot-icon"></span>
+    <a href="#" class="footer__text">Términos de uso</a>
+    <span class="footer__dot-icon"></span>
+    <a href="#" class="footer__text">Normativa de privacidad</a>
+  </footer>
+</body>
+</html>
