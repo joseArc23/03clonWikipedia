@@ -76,20 +76,51 @@ body {
 }
 
 .section__esfera {
-  border: 1px solid black;
   background-color: #fff;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section__background {
   background-image: url(../img/Wikipedia_Logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 800px;
-  height: 30vh;
+  height: 150px;
+  width: 150px;
+  /* truco para centrar un elemento absolute - gracias google :D*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .section__languages {
-  border: 1px solid black;
+  
   display: flex;
+  flex-direction: row;  /* reunda la regla por defecto pero no importa */
+  justify-content: space-between;
+  text-align: center;
+}
 
+.section__language--short {
+  width: 43%;
+  margin: 0 auto;
+}
+.section__language--medium {
+  width: 55%;
+  margin: 0 auto;
+}
+.section__language--large {
+  width: 60%;
+  margin: 0 auto;
 }
