@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clon Wikipedia</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="header">
-    <span class="header__logo">Wikipedia</span>
+    <span class="header__logo"></span>
     <strong class="header__title">La enciclopedia libre</strong>
   </header>
   <main>
     <section class="section">
       <!-- idiomas y la esfera -->
       <article class="section__esfera">
+        <!-- fondo de esfera -->
+        <div class="section__background"></div>
         <!-- español e ingles fila 1 -->
         <div class="section__languages section__language--short">
           <div class="section__language">
@@ -71,10 +74,10 @@
         </div>
       </article>
       <!-- buscador -->
-      <div class="section__input">
-        <input type="text">
+      <div class="section-input">
+        <input type="text" class="section-input__input">
         <!-- boton selecion idiomas -->
-        <div>
+        <div class="section-input__language-container">
           <label for="language">ES</label>
           <select name="idiomas" id="language">
             <option value="espanhol">Español</option>
@@ -82,13 +85,13 @@
             <option value="german">Deutsch</option>
           </select>
         </div>
-        <button>lupita</button>
+        <button class="section-input__search-icon">lupita</button>
       </div>
       <!-- leer en tu idioma -->
-      <div class="section__choose-language">
-        <button>
+      <div class="section-button">
+        <button class="section-button__button">
           <!-- logo de idiomas -->
-          <span>Leer en tu idioma</span>
+          <span class="section-button__text">Leer en tu idioma</span>
           <!-- flechita -->
         </button>
       </div>
@@ -146,11 +149,11 @@
   </main>
   <!-- pie de página -->
   <footer class="footer">
-    <p class="footer__text">Esta página está disponible bajo la <a href="#">licencia Creative Commons Atribución-Compartir Igual</a></p>
+    <p class="footer__text">Esta página está disponible bajo la <a href="#" class="footer__text footer__text--blue">licencia Creative Commons Atribución-Compartir Igual</a></p>
     <span class="footer__dot-icon"></span>
-    <a href="#" class="footer__text">Términos de uso</a>
+    <a href="#" class="footer__text footer__text--blue">Términos de uso</a>
     <span class="footer__dot-icon"></span>
-    <a href="#" class="footer__text">Normativa de privacidad</a>
+    <a href="#" class="footer__text footer__text--blue">Normativa de privacidad</a>
   </footer>
 </body>
 </html>

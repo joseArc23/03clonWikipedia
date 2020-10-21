@@ -6,6 +6,11 @@ body {
   line-height: 1.5;
   font-size: 1.4rem;
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 /* variables css */
 :root {
   /* colors */
@@ -20,6 +25,71 @@ body {
   --font-size-title: 1.6rem;
   --font-size-title-link: 1.4rem;
   --font-size-text: 1.3rem;
-  --font-weight-title: 700;
-  
+  --font-weight-title: 700;  
+  --font-weight-light: 400;
+}
+
+/* modificaciones generales */
+
+.section__language-text,
+.language,
+.section-info__text,
+.ection-link-container__text,
+.footer__text {
+  color: var(--color-text);
+  font-size: var(--font-size-text);
+}
+
+.section__language-text--title,
+.section-button__text,
+.section-link-container__title,
+.footer__text--blue {
+  color: var(--color-link);
+  font-size: var(--font-size-title);
+}
+
+
+/* header */
+.header {
+  width: 100%;
+  text-align: center;
+}
+.header__logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  height: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.header__title {
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-title);
+}
+
+/* main */
+
+.section {
+  width: 100%;
+}
+
+.section__esfera {
+  border: 1px solid black;
+  background-color: #fff;
+  background-image: url(../img/Wikipedia_Logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 30vh;
+}
+
+.section__languages {
+  border: 1px solid black;
+  display: flex;
+
 }
