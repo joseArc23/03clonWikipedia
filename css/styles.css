@@ -34,7 +34,8 @@ body {
 .section__language-text,
 .language,
 .section-info__text,
-.ection-link-container__text,
+.section-input__text,
+.section-link-container__text,
 .footer__text {
   color: var(--color-text);
   font-size: var(--font-size-text);
@@ -80,7 +81,7 @@ body {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 50vh;
   position: relative;
   display: flex;
@@ -102,16 +103,18 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+  /* https://www.esthersola.com/css-centrar-postion-absolute/ */
 }
 
 .section__languages {
   
   display: flex;
-  flex-direction: row;  /* reunda la regla por defecto pero no importa */
+  flex-direction: row;  /* redunda la regla por defecto pero no importa */
   justify-content: space-between;
   text-align: center;
 }
 
+/* modificar los espacios de separación */
 .section__language--short {
   width: 43%;
   margin: 0 auto;
@@ -124,3 +127,59 @@ body {
   width: 60%;
   margin: 0 auto;
 }
+
+/* --seccion buscador-- */
+
+.section-input {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1.5px solid var(--border-button-color);
+  border-radius: 2px;
+}
+
+.section-input__input {
+  width: 100%;
+  border: none;
+
+}
+
+/* selector de idiomas */
+.section-input__language-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  margin-right: 60px;
+}
+
+.section-input__text {
+  font-size: var(--font-size-title);
+}
+.section-input__icon-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* icono de lupa del buscador */
+.section-input__search-icon {
+  background-color: var(--color-link);
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* estilos para los iconos */
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-18 { font-size: 20px; }
+.material-icons.md-light { color: rgba(250, 246, 246, 1); }
+.material-icons.md-dim { color: rgba(0 , 0, 0, .4); }
+
